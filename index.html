@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Slider</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+<main>
+    <section class="speakers" aria-labelledby="speakers-title">
+        <header>
+            <h1 id="speakers-title" class="speakers__title">View our Featured Speakers for the Event</h1>
+            <p class="speakers__subtitle">
+                Speakers are core contributors and industry thought leaders working at <span style="color: blue">companies</span> that push for innovation.
+            </p>
+        </header>
+        <div class="speakers__slider" id="speaker-slider" role="list">
+        </div>
+    </section>
+</main>
+
+<!-- Speaker Detail Modal -->
+<dialog class="modal" id="modal" aria-labelledby="modal-title" aria-modal="true" style="display: none;">
+    <div class="modal__content">
+        <button class="modal__close" id="close-modal" aria-label="Close modal">&times;</button>
+        <article class="modal__speaker-info" id="modal-speaker-info">
+        </article>
+    </div>
+</dialog>
+
+<section class="btn">
+    <button class="btn" >See the Program</button>
+</section>
+
+<script src="scripts/app.js" type="module"></script>
+</body>
+</html>
