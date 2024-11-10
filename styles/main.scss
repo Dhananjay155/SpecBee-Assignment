@@ -135,7 +135,7 @@ main {
 .notify {
   font-size: 1rem;
   color: #555;
-  text-align: right; /* Align text to the right within the paragraph */
+  text-align: right; 
 }
 
 .btn {
@@ -151,4 +151,9 @@ main {
 
 .btn:hover {
   background-color: #0056b3; 
+}
+.arrow{
+  width:50px;
+  margin-top:60px;
+  margin-right:-200px;
 }

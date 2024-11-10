@@ -107,12 +107,6 @@ main {
   color: #666;
 }
 
-.arrow{
-  width:50px;
-  margin-top:60px;
-  margin-right:-200px;
-}
-
 .button-related {
   display: flex;
   justify-content: center;
@@ -124,13 +118,13 @@ main {
 .notify {
   font-size: 1rem;
   color: #555;
-  text-align: right; 
+  text-align: right;
 }
 
 .btn {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #007bff; 
+  background-color: #007bff; /* Customize button color */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -141,3 +135,9 @@ main {
 .btn:hover {
   background-color: #0056b3;
 }
+
+.arrow {
+  width: 50px;
+  margin-top: 60px;
+  margin-right: -200px;
+}/*# sourceMappingURL=main.css.map */
