@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaker Slider</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
-
-<main>
-    <section class="speakers" aria-labelledby="speakers-title">
-        <header>
-            <h1 id="speakers-title" class="speakers__title">View our Featured Speakers for the Event</h1>
-            <p class="speakers__subtitle">
-                Speakers are core contributors and industry thought leaders working at <span style="color: blue">companies</span> that push for innovation.
-            </p>
-        </header>
-        <div class="speakers__slider" id="speaker-slider" role="list">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Speakers</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="speakers">
+        <div class="speakers__heading">
+          <h1 class="speakers__title">
+            View our Featured Speakers for the Event
+          </h1>
+          <p class="speakers__description">
+            Speakers are core contributors and industry thought leaders working at
+            <span class="speakers__companies">companies</span> that push for innovation.
+          </p>
         </div>
-    </section>
-</main>
 
-<!-- Speaker Detail Modal -->
-<dialog class="modal" id="modal" aria-labelledby="modal-title" aria-modal="true" style="display: none;">
-    <div class="modal__content">
-        <button class="modal__close" id="close-modal" aria-label="Close modal">&times;</button>
-        <article class="modal__speaker-info" id="modal-speaker-info">
-        </article>
+        <div class="modal"></div>
+
+        <div class="speakers__slider">
+          <button class="speakers__arrow--left" aria-label="Previous slide">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+
+          <div class="speakers__list">
+          </div>
+
+          <button class="speakers__arrow--right" aria-label="Next slide">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+        <button class="speakers__program-button">See the Program</button>
+      </section>
+
+      <section class="program-details">
+        <div class="program-details__click">
+          Click here to see the full program
+        </div>
+        <div class="program-details__navigation">
+          <img src="/assets/Arrow 02.png" alt="" />
+        </div>
+      </section>
     </div>
-</dialog>
 
-<div class="button-related">
-    <img src="./assets/images/arrow.webp" alt="arrow" class="arrow">
-    <p class="notify">Click here to see<br> the full program</p>
-    <button class="btn">See the Program</button>
-  
-</div>
-
-<script src="scripts/app.js" type="module"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
